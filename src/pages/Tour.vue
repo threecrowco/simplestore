@@ -7,7 +7,10 @@
       <div class="flex-1 pl-8">
         {{ tourdate.venue.name }} - {{ tourdate.venue.location }}
       </div>
-      <div>More Info</div>
+        <a class="px-4 py-2 bg-black text-white text-sm font-bold" v-if="!tourdate.offers.length" :href="tourdate.url">More Info</a>
+      <div class="ml-3" v-for="offer in tourdate.offers" :key="offer.url">
+        <a class="px-4 py-2 bg-black text-white text-sm font-bold" :href="offer.url">Get Tickets</a>
+      </div>
     </div>
   </Layout>
 </template>
