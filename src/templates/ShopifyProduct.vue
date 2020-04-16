@@ -6,7 +6,9 @@
             <h1 class="font-bold text-2xl mb-2">{{ product.title }}</h1>
             <p class="text-sm mb-6">{{ product.description }}</p>
             <div class="font-bold mb-4">{{ product.priceRange.minVariantPrice.amount }}</div>
-            <v-select class="mb-2" :label="product.options[0].name" :options="product.options[0].values"></v-select>
+            <ClientOnly>
+                <v-select class="mb-2" :label="product.options[0].name" :options="product.options[0].values"></v-select>
+            </ClientOnly>
             <button class="block w-full px-4 py-2 bg-black text-white font-bold focus:outline-none">Add To Cart</button>
           </div>
       </div>
