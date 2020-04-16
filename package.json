@@ -12,6 +12,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-tailwindcss": "^2.2.43",
     "gridsome-source-shopify": "^0.1.12",
+    "square-connect": "^3.20200325.0",
     "vue-animejs": "^2.1.1",
     "vue-axios": "^2.1.5",
     "vue-moment": "^4.1.0",
