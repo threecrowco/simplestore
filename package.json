@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "gridsome": "^0.7.0",
     "gridsome-plugin-tailwindcss": "^2.2.43",
     "gridsome-source-shopify": "^0.1.12",
